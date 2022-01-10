@@ -36,7 +36,7 @@ const Home: NextPage = () => {
             />
             <CopyToClipboard text={url} onCopy={() => setIsCopied(true)}>
               <button
-                className={isCopied || search === '' ? "bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"}
+                className={isCopied || search === '' ? "ml-5 bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed" : "ml-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"}
                 disabled={isCopied || search === ''}
               >
                 {isCopied ? 'Copied!' : 'Copy'}
